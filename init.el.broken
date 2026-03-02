@@ -1,0 +1,99 @@
+;; ============================
+;; Elpaca — official bootstrap
+;; ============================
+
+(defvar elpaca-installer-version 0.8)
+(defvar elpaca-directory
+  (expand-file-name "elpaca/" user-emacs-directory))
+(defvar elpaca-builds-directory
+  (expand-file-name "builds/" elpaca-directory))
+(defvar elpaca-repos-directory
+  (expand-file-name "repos/" elpaca-directory))
+(defvar elpaca-order
+  '(elpaca :repo "https://github.com/progfolio/elpaca.git"
+           :ref nil
+           :files (:defaults "elpaca-test.el")
+           :build (:not elpaca--activate-package)))
+
+(let* ((repo  (expand-file-name "elpaca/" elpaca-repos-directory))
+       (build (expand-file-name "elpaca/" elpaca-builds-directory))
+       (order elpaca-order)
+       (default-directory repo))
+  (add-to-list 'load-path (if (file-exists-p build) build repo))
+  (unless (file-exists-p repo)
+    (make-directory repo t)
+    (condition-case-unless-debug err
+        (if-let ((buffer (pop-to-buffer-same-window "*elpaca-bootstrap*"))
+                 ((zerop (call-process "git" nil buffer t "clone"
+                                        (plist-get order :repo) repo))))
+            (progn
+              (call-process "git" nil buffer t "checkout"
+                            (or (plist-get order :ref) "--"))
+              (byte-recompile-directory repo 0 'force))
+          (error "Elpaca bootstrap failed"))
+      (error
+       (delete-directory repo 'recursive)
+       (signal (car err) (cdr err)))))
+(require 'elpaca)
+(add-hook 'after-init-hook #'elpaca-process-queues)
+
+
+
+(setq inhibit-startup-screen t)
+(message ">>> INIT.EL ZALADOWANY <<<")
+
+;; ================================
+;; VANILLA EMACS — JEDYNY INIT
+;; ================================
+
+;; Wyłącz zbędny UI szum
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
+
+;; Podstawy edycji
+(setq inhibit-startup-screen t)
+(setq ring-bell-function 'ignore)
+
+;; Org-mode (czysty, bez frameworków)
+(require 'org)
+
+;; ================================
+;; Pasek stanu (mode-line)
+;; ================================
+
+;; Pokaż nazwę bufora i pliku
+(setq mode-line-format
+      '("%e"
+        mode-line-front-space
+        " "
+        mode-line-buffer-identification
+        "  "
+        mode-line-position
+        "  "
+        mode-line-modes
+        mode-line-end-spaces))
+
+(global-display-line-numbers-mode 1)
+;; ================================
+;; Czcionka
+;; ================================
+
+(set-face-attribute 'default nil
+                    :font "JetBrains Mono"
+                    :height 120)
+;; ================================
+;; Motyw
+;; ================================
+
+(load-theme 'wombat t)
+;; ================================
+;; Płynność przewijania
+;; ================================
+
+(setq scroll-margin 3)
+(setq scroll-conservatively 101)
+(setq scroll-step 1)
+
+(find-file "~/mapa/sesja.org")
+

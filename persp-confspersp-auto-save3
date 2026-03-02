@@ -1,0 +1,109 @@
+;; -*- mode: emacs-lisp; eval: (progn (pp-buffer) (indent-buffer)) -*-
+((def-persp nil
+	    ((def-buffer "init.el<michal>"
+			 "/home/michal/.emacs.d/init.el"
+			 emacs-lisp-mode)
+	     (def-buffer "dwa-okna.org"
+			 "/home/michal/mapa/ściągi/dwa-okna.org"
+			 org-mode)
+	     (def-buffer "skróty.org" "/home/michal/mapa/skróty.org"
+			 org-mode)
+	     (def-buffer "dashboard.org"
+			 "/home/michal/mapa/dashboard.org" org-mode)
+	     (def-buffer "README.org<operation-repo>"
+			 "/home/michal/operation-repo/README.org"
+			 org-mode)
+	     (def-buffer "plan.org" "/home/michal/mapa/plan.org"
+			 org-mode)
+	     (def-buffer "sesja.org" "/home/michal/mapa/sesja.org"
+			 org-mode)
+	     (def-buffer "mapa" "~/mapa/" dired-mode)
+	     (def-buffer "test-sterile" "~/test-sterile/" dired-mode)
+	     (def-buffer "ściągi" "~/mapa/ściągi/" dired-mode)
+	     (def-buffer "init.el" nil emacs-lisp-mode)
+	     (def-buffer "init.el<>" nil emacs-lisp-mode)
+	     (def-buffer "magit: test-sterile<michal>" nil
+			 fundamental-mode)
+	     (def-buffer "magit: mapa<3>" nil fundamental-mode)
+	     (def-buffer "magit-revision: test-sterile" nil
+			 fundamental-mode)
+	     (def-buffer "magit: test-sterile" nil fundamental-mode)
+	     (def-buffer "magit: mapa<2>" nil fundamental-mode)
+	     (def-buffer "README.org<michal>" nil org-mode)
+	     (def-buffer "magit: mapa</home/michal>" nil
+			 fundamental-mode)
+	     (def-buffer "test" nil fundamental-mode)
+	     (def-buffer "magit-diff: mapa<michal>" nil
+			 fundamental-mode)
+	     (def-buffer "setup-System-Crafters" nil fundamental-mode)
+	     (def-buffer "buffer-makros.el" nil emacs-lisp-mode)
+	     (def-buffer "magit-diff: mapa" nil fundamental-mode)
+	     (def-buffer "skróty" nil fundamental-mode)
+	     (def-buffer "magit-process: mapa" nil fundamental-mode)
+	     (def-buffer "magit: mapa" nil fundamental-mode)
+	     (def-buffer "magit-process: mapa<michal>" nil
+			 fundamental-mode)
+	     (def-buffer "magit: mapa<michal>" nil fundamental-mode)
+	     (def-buffer "magit-process: mapa</home/michal>" nil
+			 fundamental-mode)
+	     (def-buffer "magit-diff: mapa</home/michal>" nil
+			 fundamental-mode)
+	     (def-buffer "magit-process: mapa<2>" nil fundamental-mode)
+	     (def-buffer "magit-diff: mapa<2>" nil fundamental-mode)
+	     (def-buffer "magit-process: test-sterile" nil
+			 fundamental-mode)
+	     (def-buffer "magit-diff: test-sterile" nil
+			 fundamental-mode)
+	     (def-buffer "magit-process: mapa<3>" nil fundamental-mode)
+	     (def-buffer "magit-diff: mapa<3>" nil fundamental-mode)
+	     (def-buffer "magit: mapa<4>" nil fundamental-mode)
+	     (def-buffer "README.org<test-sterile>"
+			 "/home/michal/test-sterile/README.org"
+			 org-mode)
+	     (def-buffer "operation-repo" "~/operation-repo/"
+			 dired-mode)
+	     (def-buffer "README.org<mapa>"
+			 "/home/michal/mapa/README.org" org-mode)
+	     (def-buffer "lisp" "~/.emacs.d/lisp/" dired-mode)
+	     (def-buffer "magit.org" "/home/michal/mapa/magit.org"
+			 org-mode)
+	     (def-buffer "custom-keys.org"
+			 "/home/michal/mapa/cheats/custom-keys.org"
+			 org-mode)
+	     (def-buffer "keys.el" "/home/michal/.emacs.d/keys.el"
+			 emacs-lisp-mode)
+	     (def-buffer "defaults.el"
+			 "/home/michal/.emacs.d/defaults.el"
+			 emacs-lisp-mode)
+	     (def-buffer ".emacs.d" "~/.emacs.d/" dired-mode))
+	    (def-wconf
+	     (((min-height . 4) (min-width . 10)
+	       (min-height-ignore . 2) (min-width-ignore . 6)
+	       (min-height-safe . 1) (min-width-safe . 2)
+	       (min-pixel-height . 96) (min-pixel-width . 100)
+	       (min-pixel-height-ignore . 48)
+	       (min-pixel-width-ignore . 60)
+	       (min-pixel-height-safe . 24)
+	       (min-pixel-width-safe . 20))
+	      leaf (pixel-width . 832) (pixel-height . 840)
+	      (total-width . 83) (total-height . 35)
+	      (normal-height . 1.0) (normal-width . 1.0)
+	      (buffer "init.el<michal>" (selected . t) (hscroll . 0)
+		      (fringes 8 8 nil nil) (margins nil)
+		      (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0)
+		      (dedicated) (point . 613) (start . 1))
+	      (prev-buffers ("dwa-okna.org" 1210 1792)
+			    (".emacs.d" 1 508) ("defaults.el" 1 1940)
+			    ("keys.el" 1 915)
+			    ("custom-keys.org" 1 614)
+			    ("magit.org" 1 123) ("lisp" 1 174)
+			    ("README.org<mapa>" 1 368)
+			    ("operation-repo" 1 230)
+			    ("README.org<test-sterile>" 1 376)
+			    ("skróty.org" 1617 2419)
+			    ("README.org<operation-repo>" 36 765)
+			    ("init.el<michal>" 3875 4444)
+			    ("init.el" 1 1) ("dashboard.org" 1 1)
+			    ("init.el<>" 1 1) ("*dashboard*" 1 1)
+			    ("mapa" 1 811))))
+	    (def-params nil) t nil nil))

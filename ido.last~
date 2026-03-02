@@ -1,0 +1,57 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/michal/mapa/" . "ściągi/")
+ ("/home/" . "michal/")
+ ("/" . "home/")
+ ("/etc/nixos/" . "home/")
+ ("/etc/" . "nixos/")
+ ("/home/michal/" . ".emacs.d/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/michal/.emacs.d/"
+ "/home/michal/mapa/ściągi/"
+ "/etc/nixos/home/"
+ "/home/michal/mapa/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "keys.el"
+ "init.el"
+ "init.el.bak-derek-test"
+ "Bookmarks_Projects"
+ "Rejestry.org"
+ "Rejestry"
+ "michal.nix"
+ "gtd.org"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/michal/.emacs.d/" (27003 30973 428556 250000) "keys.el" "init.el" "places" "custom-vars.el" "ido.last" "#init.el.bak-derek-test#" "transient/" "elpaca/" "lisp/" "persp-confspersp-auto-save2" "auto-save-list/" "history" "custom-vars.el~" "init.el~" "elpa/" "persp-confs/" "persp-confspersp-auto-save3" "keys.el~" "bookmarks" "init.el.bak-derek-test" "eln-cache/" "org-roam.db" "persp-confspersp-auto-save1" "init.el.broken" "ido.last~" "defaults.el" "persp-confspersp-auto-save" "recentf" "../" "./")
+
+ ("/home/michal/" (27003 30423 267000 626000) ".rnd" "java/" "Pobrane/" "Dokumenty/" ".compose-cache/" ".gtkrc-2.0" "Music/" ".steampath" ".wine/" ".taskrc" "org-practice/" "wallpapers/" "Pulpit/" "Muzyka/" "Wideo/" "org/" "Szablony/" ".steampid" "result/" ".nix-profile/" "nix-learning-notes/" ".mozilla/" ".cache/" "Publiczny/" ".config/" ".bash_history" ".wget-hsts" "snapshots/" "emacs_log_20260124230543.txt" "Games/" ".gitconfig" "javascript/" ".zsh_history" "test-sterile/" "dotfiles/" "bin/" ".local/" ".emacs.d/" "podstawa-nixos/" ".ssh/" ".pki/" ".password-store/" "backup/" "README.org~" "lab/" "notes-md/" ".task/" ".pulse-cookie" ".nix-defexpr/" "Around_the_World(dobreprogramy.pl).exe" ".bashrc" "operation-repo/" ".zshenv" "Obrazy/" "emacs_log_20260124231152.txt" ".var/" ".steam/" ".nv/" "javascript-teoria/" "Mail/" "emacs_log_20260124231457.txt" ".w3m/" "mapa/" "emacs_log.txt" "Documents/" "org-roam/" "../" ".thunderbird/" ".gnupg/" "./")
+
+ ("/home/michal/mapa/ściągi/" (27003 7843 322601 173000) "Rejestry.org~" "Rejestry.org" "Bookmarks_Projects" "dwa-okna.org" "../" "./")
+
+ ("/home/michal/org-roam/" (27002 24071 945003 969000) "../" "./")
+
+ ("/etc/nixos/home/" (26978 61084 71525 339000) "michal.nix" "zsh/" "../" "./")
+
+ ("/etc/nixos/" (27001 7153 183620 716000) "scripts/" "plasma.nix" "RECOVERY.md" ".gitignore" "result/" "README.md" "nixos/" "flake.lock" "_archive/" "modules/" "flake.nix" "\\" "flake-backup.nix" "home/" "nvim" "../" "./")
+
+ ("/etc/" (27001 21713 311627 45000) "shadow" "nixos.clean/" "bash_logout" ".pwd.lock" "lsb-release" "egl/" "bashrc" "man_db.conf" "udisks2/" "subgid" "ipsec.secrets" "doas.conf" "profiles/" "default/" "shells" "resolvconf.conf" "netgroup" "passwd" "host.conf" "localtime" "pipewire/" "NIXOS" "ssl/" "lvm/" "kbd/" "geoclue/" "nixos.broken/" "printcap" "nixos.BACKUP.20251221-1104/" "subuid" "resolv.conf" "nanorc" "nscd.conf" ".clean" "hosts" "terminfo/" "fuse.conf" "modprobe.d/" "group" "zinputrc" "issue" "nixos.prod/" "grub.d/" "passwd-" "sudoers" "tmpfiles.d/" "nixos/" "polkit-1/" "inputrc" "sddm.conf" "bluetooth/" "binfmt.d/" "fstab" "hostname" "mtab" "vconsole.conf" "nixos.damaged/" "X11/" "rpc" "pulse/" "ssh/" "firefox/" "UPower/" "ipsec.d/" "dbus-1/" "kernel/" "openal/" "pki/" "alsa/" "static/" "fonts/" "os-release" "NetworkManager/" "protocols" "nvidia/" "zoneinfo/" "zshenv" "services" "zshrc" "profile" "systemd/" "resolv.conf.bak" "machine-id" "udev/" "login.defs" "set-environment" "modules-load.d/" "fwupd/" "adjtime" "nsswitch.conf" "pam/" "sysctl.d/" "nixos-wt/" "pam.d/" ".updated" "../" "shadow-" "locale.conf" "zprofile" "libblockdev/" "nix/" "./")
+
+ ("/nix/" (26944 40417 795339 915000) "var/" "store/" "../" "./")
+
+ ("/home/" (26944 40657 75051 683000) "michal/" "../" "./")
+
+ ("/home/michal/mapa/" (27001 62941 554500 781000) "atlas/" "sesja.org~" "docs/" "emacs/" "templates/" ".git/" "cheats/" "archiwum/" "ops/" "gtd.org" "snapshots/" "plan.org" "ściągi/" "skróty.org~" "skróty.org" "magit.org" "howto/" "INDEX.org" "README.org~" "README.org" "dni/" "sesja.org" "plan.org~" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

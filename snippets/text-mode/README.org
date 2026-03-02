@@ -1,0 +1,122 @@
+#+TITLE: Chat Anchors – system kotwic rozmów
+#+AUTHOR: 
+#+STARTUP: overview
+
+* Cel
+Ten system służy do *utrwalania sensu rozmów*, zwłaszcza takich, które:
+- nie są jednorazowym pytaniem,
+- mają ciąg dalszy,
+- łatwo mogą „uciec” w ogólną pogadankę.
+
+Kotwica to *jedno zdanie-start*, które:
+- ustawia kontekst rozmowy,
+- pomaga ChatGPT nadać dobrą nazwę wątkowi,
+- pozwala wrócić do tematu po przerwie.
+
+System jest:
+- prosty,
+- powtarzalny,
+- odporny na restart Emacsa i chaos w głowie.
+
+---
+
+* Jak to działa (w skrócie)
+1. W Emacsie wpisuję krótki klucz (np. =atech=).
+2. Rozwijam snippet (=yas-expand= lub TAB).
+3. Wklejam powstałe zdanie jako *pierwszą wiadomość w nowym chacie*.
+4. Dopiero potem zadaję właściwe pytanie / prowadzę rozmowę.
+
+Jedno zdanie = jedna kotwica = rozmowa nie ginie.
+
+---
+
+* Dostępne kotwice
+
+** anchor – ogólna
+Klucz: =anchor=
+
+Używam, gdy rozmowa dotyczy:
+- systemów notatek,
+- organizacji myślenia,
+- tematów „nie-do-zgubienia”, ale jeszcze bez jasnej kategorii.
+
+** atech – techniczna
+Klucz: =atech=
+
+Do rozmów o:
+- konfiguracji (Emacs, NixOS, narzędzia),
+- debugowaniu,
+- zmianach krok po kroku,
+- minimalizacji ryzyka.
+
+** asoul – duchowa / refleksyjna
+Klucz: =asoul=
+
+Do rozmów o:
+- praktykach duchowych,
+- sensie, rytmie, refleksji,
+- notatkach bez presji i ocen.
+
+** aproj – projektowa
+Klucz: =aproj=
+
+Do rozmów o:
+- długofalowych projektach,
+- strukturze myślenia,
+- decyzjach, które mają konsekwencje w czasie.
+
+---
+
+* Gdzie to żyje (technicznie)
+Snippety są zapisane jako osobne pliki:
+
+=~/.emacs.d/snippets/text-mode/=
+
+Każda kotwica = jeden plik:
+- =anchor=
+- =atech=
+- =asoul=
+- =aproj=
+
+Dzięki temu:
+- wszystko działa po restarcie Emacsa,
+- łatwo to wersjonować (git),
+- nie ma ukrytej magii.
+
+---
+
+* Test / diagnostyka
+Jeśli coś przestaje działać:
+
+1. Przeładuj snippety:
+   #+begin_src
+   M-x yas-reload-all
+   #+end_src
+
+2. Sprawdź, czy Emacs je widzi:
+   #+begin_src
+   M-x yas-describe-tables
+   #+end_src
+
+W =text-mode= powinny być widoczne wszystkie kotwice.
+
+---
+
+* Zasady rozbudowy systemu
+- Nowa kotwica = nowy plik snippeta.
+- Zmieniasz treść → edytujesz treść.
+- Zmieniasz klucz → zmieniasz tylko =# key:=.
+- Nie komplikuj, jeśli obecna liczba kotwic wystarcza.
+
+System ma *służyć*, nie wymagać pamiętania.
+
+---
+
+* Status
+System działa.
+Można:
+- dodać automatyczne TAB,
+- spiąć z Org-mode,
+- albo zostawić w tej formie na długo.
+
+Brak presji na dalsze ulepszanie.

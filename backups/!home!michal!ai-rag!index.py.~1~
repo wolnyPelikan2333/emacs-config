@@ -1,0 +1,58 @@
+import os
+import json
+import urllib.request
+import urllib.parse
+
+BASE_DIR = os.path.expanduser("~/mapa")
+OUTPUT_FILE = "index.json"
+OLLAMA_URL = "http://localhost:11434/api/embeddings"
+MODEL = "deepseek-coder:6.7b"
+
+def get_embedding(text):
+    data = json.dumps({
+        "model": MODEL,
+        "prompt": text
+    }).encode("utf-8")
+
+    req = urllib.request.Request(
+        OLLAMA_URL,
+        data=data,
+        headers={"Content-Type": "application/json"},
+        method="POST"
+    )
+
+    with urllib.request.urlopen(req) as response:
+        result = json.loads(response.read().decode())
+        return result["embedding"]
+
+def chunk_text(text, chunk_size=800):
+    for i in range(0, len(text), chunk_size):
+        yield text[i:i+chunk_size]
+
+index = []
+
+for root, _, files in os.walk(BASE_DIR):
+    for file in files:
+        if file.endswith((".org", ".md", ".txt")):
+            path = os.path.join(root, file)
+            try:
+                with open(path, "r", encoding="utf-8", errors="ignore") as f:
+                    content = f.read()
+
+                for chunk in chunk_text(content):
+                    embedding = get_embedding(chunk)
+                    index.append({
+                        "path": path,
+                        "text": chunk,
+                        "embedding": embedding
+                    })
+
+                print(f"Zindeksowano: {path}")
+
+            except Exception as e:
+                print(f"Błąd przy {path}: {e}")
+
+with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+    json.dump(index, f)
+
+print("Gotowe. Zapisano index.json")

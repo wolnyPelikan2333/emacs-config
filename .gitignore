@@ -1,0 +1,11 @@
+elpa/
+elpaca/
+straight/
+cache/
+auto-save-list/
+eln-cache/
+recentf
+places
+url/
+transient/
+*.elc

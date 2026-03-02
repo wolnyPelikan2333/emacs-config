@@ -1,0 +1,164 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/michal/mapa/sobota/wzorce/" . "radosne/")
+ ("/home/michal/mapa/sobota/" . "wzorce/")
+ ("/home/michal/notatki-duchowe/" . "medytacje/")
+ ("/home/michal/org/" . "domowe/")
+ ("/home/michal/.emacs.d/" . "templates/")
+ ("/home/michal/finanse/" . "jedzenie/")
+ ("/home/michal/.emacs.d/snippets/" . "text-mode/")
+ ("/home/michal/rozwazania/" . "Mt/")
+ ("/home/michal/bajka/" . "opowiadanie/")
+ ("/home/michal/mapa/docs/" . "emacs/")
+ ("/home/michal/mapa/" . "sobota/")
+ ("/home/" . "michal/")
+ ("/" . "home/")
+ ("/etc/nixos/" . "scripts/")
+ ("/etc/" . "nixos/")
+ ("/home/michal/" . ".emacs.d/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/michal/.emacs.d/"
+ "/home/michal/mapa/"
+ "/home/michal/mapa/sobota/wzorce/radosne/"
+ "/home/michal/rozwazania/"
+ "/home/michal/mapa/templates/"
+ "/home/michal/mapa/medytacja/"
+ "/home/michal/"
+ "/home/michal/org/domowe/"
+ "/home/michal/.emacs.d/templates/"
+ "/home/michal/mapa/rytm-dnia/"
+ "/home/michal/mapa/biblioteka.org/"
+ "/home/michal/finanse/jedzenie/"
+ "/home/michal/ai-rag/"
+ "/home/michal/user-config/"
+ "/etc/nixos/scripts/"
+ "/etc/nixos/nixos/"
+ "/home/michal/notatki-duchowe/"
+ "/home/michal/rozwazania/Mt/"
+ "/home/michal/.emacs.d/snippets/text-mode/"
+ "/home/michal/mapa/ściągi/"
+ "/home/"
+ "/home/michal/.emacs.d/snippets/"
+ "/home/michal/mapa/sobota/"
+ "/home/michal/mapa/sobota/02-ofiarowanie.org/"
+ "/home/michal/mapa/sobota/01-zwiastowanie.org/"
+ "/home/michal/bajka/opowiadanie/"
+ "/home/michal/bajka/szablony/"
+ "/home/michal/mapa/howto/"
+ "/etc/nixos/home/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "init.el"
+ "skróty.org"
+ "matka-kosciola.org"
+ "pierwsza-sobota.org"
+ "zbrojownia.org"
+ "rehabilitacja-pakowanie.org"
+ "README.org"
+ "petla-template.org"
+ "23-02-2026.org"
+ "Biblia Jerozolimska z komentarzami wydanie V.pdf"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/michal/.emacs.d/" (27044 53082 224664 512000) "keys.el" "init.el" "snippets/" "places" "custom-vars.el" "ido.last" "#init.el.bak-derek-test#" "templates/" "transient/" "backups/" "elpaca/" "lisp/" "persp-confspersp-auto-save2" "auto-save-list/" "history" "bookmarks~" "custom-vars.el~" "init.el~" "elpa/" ".emacs.desktop" "persp-confs/" "persp-confspersp-auto-save3" "keys.el~" "bookmarks" "eln-cache/" "org-roam.db" "persp-confspersp-auto-save1" "init.el.broken" "ido.last~" "defaults.el" "persp-confspersp-auto-save" "recentf" "../" "./")
+
+ ("/home/michal/mapa/medytacja/" (27044 11674 848808 982000) "01-03-2026.org" "21-02-2026.org" "19-02-2026.org" "22-02-2026.org" "27-02-2026.org" "14-02-2026.org" "28-02-2026.org" "17-02-2026.org" "26-02-2026.org" "18-02-2026.org" "23-02-2026.org" "../" "./")
+
+ ("/home/michal/mapa/" (27044 28891 214080 647000) "zbrojownia.org" "atlas/" "sesja.org~" "docs/" "emacs/" "skrotka/" "templates/" ".git/" "cheats/" "archiwum/" "ops/" "noc/" "pdf-notes/" "gtd.org" "snapshots/" "sobota/" "droga-krzyżowa.org" "plan.org" "ściągi/" "medytacja/" "skróty.org~" "rytm-dnia/" "skróty.org" "magit.org" "howto/" "INDEX.org" "README.org~" "README.org" "rehabilitacja-pakowanie.org" "dni/" "sesja.org" "pierwsza-sobota.org" "biblioteka.org" "plan.org~" "../" "./")
+
+ ("/home/michal/user-config/emacs/" (27044 44299 553388 72000) "keys.el" "init.el" "snippets/" "places" "custom-vars.el" "ido.last" "#init.el.bak-derek-test#" "templates/" "transient/" "backups/" "elpaca/" "lisp/" "persp-confspersp-auto-save2" "auto-save-list/" "history" "bookmarks~" "custom-vars.el~" "init.el~" "elpa/" ".emacs.desktop" "persp-confs/" "persp-confspersp-auto-save3" "keys.el~" "bookmarks" "eln-cache/" "org-roam.db" "persp-confspersp-auto-save1" "init.el.broken" "ido.last~" "defaults.el" "persp-confspersp-auto-save" "recentf" "../" "./")
+
+ ("/home/michal/mapa/sobota/wzorce/radosne/" (27014 45897 469656 250000) "znalezienie.org" "ofiarowanie.org" "zmartwychwstanie.org" "matka-kosciola.org" "nawiedzenie.org" "zwiastowanie.org" "narodzenie.org" "pod-krzyzem.org" "../" "./")
+
+ ("/home/michal/mapa/sobota/wzorce/" (27014 45754 511578 90000) "radosne/" "bolesne/" "chwalebne/" "swiatla/" "../" "./")
+
+ ("/home/michal/" (27044 3875 101173 807000) ".dotnet/" ".rnd" "java/" "Pobrane/" "Dokumenty/" ".compose-cache/" ".gtkrc-2.0" "Biblia Jerozolimska z komentarzami wydanie V.pdf" "Music/" ".steampath" ".wine/" "user-config/" ".taskrc" ".zshrc" "org-practice/" "wallpapers/" "ai-rag/" "Pulpit/" "Muzyka/" "Wideo/" "org/" "Szablony/" ".steampid" "result/" ".nix-profile/" "nix-learning-notes/" ".mozilla/" ".cache/" "Publiczny/" ".config/" ".bash_history" "notatki-duchowe/" ".wget-hsts" "bajka/" "snapshots/" "emacs_log_20260124230543.txt" "Games/" ".gitconfig" "różaniec/" "javascript/" ".zsh_history" "test-sterile/" "dotfiles/" "bin/" ".local/" ".emacs.d/" "podstawa-nixos/" ".ssh/" ".pki/" ".password-store/" ".ollama/" "backup/" "README.org~" "lab/" "notes-md/" ".task/" ".pulse-cookie" ".nix-defexpr/" "Around_the_World(dobreprogramy.pl).exe" ".bashrc" "operation-repo/" ".zshenv" "Obrazy/" "emacs_log_20260124231152.txt" ".var/" "obsidian/" "rozwazania/" ".steam/" ".nv/" "javascript-teoria/" "Mail/" "finanse/" "emacs_log_20260124231457.txt" ".w3m/" "mapa/" "emacs_log.txt" "Documents/" "org-roam/" "../" ".thunderbird/" ".gnupg/" "Videos/" "./" ".vscode/")
+
+ ("/etc/nixos/nixos/" (27036 42206 844909 869000) "result/" "hardware-configuration.nix" "#configuration.nix#" "configuration.nix" "../" "./")
+
+ ("/home/michal/notatki-duchowe/medytacje/" (27016 57019 168377 224000) "../" "./")
+
+ ("/home/michal/mapa/rytm-dnia/" (27032 37696 47968 510000) "szablon-dnia.org" "dni/" "../" "./")
+
+ ("/home/michal/org/domowe/" (27032 19783 438919 327000) "20-02-2026.org" "../" "./")
+
+ ("/home/michal/org/" (27032 19147 719112 271000) "INBOX.org" "NOTATKI.org" ".git/" "todo.org" "TODO.org" "DASHBOARD.org" "domowe/" "ARCHIWUM/" "roam/" "PLAN.org" "SESJE.org" "../" "./")
+
+ ("/home/michal/.emacs.d/templates/" (27032 19442 480512 335000) "domowe-dzien.org" "../" "./")
+
+ ("/home/michal/finanse/jedzenie/" (27027 14586 786026 69000) "jedzenie.org" "02-02-2026-biedronka.org" "../" "./")
+
+ ("/home/michal/mapa/biblioteka.org/" (27030 51950 420217 576000) "../" "./")
+
+ ("/home/michal/ai-rag/" (27022 57037 493714 640000) "index.json" "index.py" "aliases.json" "query.py" "../" "./")
+
+ ("/home/michal/finanse/" (27027 12890 499646 687000) "jedzenie/" "../" "./")
+
+ ("/home/michal/user-config/" (27021 39421 211851 24000) "emacs/" ".git/" ".gitignore" "../" "./")
+
+ ("/etc/" (27021 31448 417569 234000) "shadow" "nixos.clean/" "bash_logout" ".pwd.lock" "lsb-release" "egl/" "bashrc" "man_db.conf" "udisks2/" "subgid" "ipsec.secrets" "doas.conf" "profiles/" "default/" "shells" "resolvconf.conf" "netgroup" "passwd" "host.conf" "localtime" "pipewire/" "NIXOS" "ssl/" "lvm/" "kbd/" "geoclue/" "nixos.broken/" "printcap" "nixos.BACKUP.20251221-1104/" "subuid" "resolv.conf" "nanorc" "nscd.conf" ".clean" "hosts" "terminfo/" "fuse.conf" "modprobe.d/" "group" "zinputrc" "issue" "nixos.prod/" "grub.d/" "passwd-" "sudoers" "tmpfiles.d/" "nixos/" "polkit-1/" "inputrc" "sddm.conf" "bluetooth/" "binfmt.d/" "fstab" "hostname" "mtab" "vconsole.conf" "nixos.damaged/" "X11/" "rpc" "pulse/" "ssh/" "firefox/" "UPower/" "ipsec.d/" "dbus-1/" "kernel/" "openal/" "pki/" "alsa/" "static/" "fonts/" "os-release" "NetworkManager/" "protocols" "nvidia/" "zoneinfo/" "zshenv" "services" "zshrc" "profile" "systemd/" "resolv.conf.bak" "machine-id" "udev/" "login.defs" "set-environment" "modules-load.d/" "fwupd/" "adjtime" "nsswitch.conf" "pam/" "sysctl.d/" "nixos-wt/" "pam.d/" ".updated" "../" "shadow-" "locale.conf" "zprofile" "libblockdev/" "nix/" "./")
+
+ ("/etc/nixos/" (27021 31417 293037 455000) "scripts/" "plasma.nix" "RECOVERY.md" ".git/" ".gitignore" "result/" "README.md" "nixos/" "flake.lock" "_archive/" "modules/" "flake.nix" "flake-backup.nix" "home/" "nvim" "../" "./")
+
+ ("/etc/nixos/scripts/" (27021 31327 36867 947000) "nss-safe" "../" "./")
+
+ ("/home/michal/notatki-duchowe/" (27016 57035 9371 16000) "medytacje/" "skrutacje/" "pierwsze-soboty/" "../" "./")
+
+ ("/home/michal/rozwazania/Mt/" (27016 45857 991153 286000) "08-02-26.org" "07-02-26.org" "06-02-2026.org" "../" "./")
+
+ ("/home/michal/rozwazania/" (27016 43992 106706 87000) ".git/" "Mt/" "README.org" "../" "./")
+
+ ("/home/michal/.emacs.d/snippets/text-mode/" (27015 52456 236435 274000) "aproj" "README.org" "anchors" "atech" "asoul" "../" "./")
+
+ ("/run/" (27015 40407 508000 641000) "keys/" "udev/" "lock/" "mount/" "current-system/" "booted-system/" "systemd/" "credentials/" "tmpfiles.d/" "log/" "fsck/" "wrappers/" "binfmt/" "pppd/" "nvidia-xdriver/" "opengl-driver/" "opengl-driver-32/" "lvm/" "sddm/" "user/" "utmp" "dbus/" "acpid.socket" "resolvconf/" "NetworkManager/" "agetty.reload" "udisks2/" "nscd/" "../" "./")
+
+ ("/run/current-system/" (0 1 0 0) "kernel-params" "boot.json" "init" "nixos-version" "init-interface-version" "sw/" "activate" "etc/" "initrd" "firmware/" "system" "bin/" "extra-dependencies" "kernel" "systemd/" "kernel-modules/" "dry-activate" "append-initrd-secrets" "specialisation/" "../" "./")
+
+ ("/run/current-system/sw/" (0 1 0 0) "lib/" "etc/" "bin/" "libexec/" "share/" "../" "sbin/" "./")
+
+ ("/run/current-system/sw/bin/" (0 1 0 0) "rmdir" "lvrename" "mtools" "winegcc" "lvmdump" "xdg-desktop-icon" "pw-loopback" "obex-check-device" "nvidia-smi" "xwaylandvideobridge" "pod2text" "lnstat" "systemd-firstboot" "zramctl" "getunimap" "blkid" "kdemv5" "fc-query" "systemd-vmspawn" "iptables-save" "lsd" "diff" "ebtables-nft" "pacat" "iptables-legacy-save" "obexftpd" "blueman-applet" "kill" "lvmdevices" "wcurl" "calibre-smtp" "web2disk" "addr2line" "sbase" "tgz" "vgrename" "notepad" "winedump" "streamzip" "lpmove" "genl" "findfs" "wine-preloader" "ciptool" "padsp" "newuidmap" "zipdetails" "konsole" "nscd" "okular" "loadkeys" "calibre-debug" "bcache-super-show" "stdbuf" "yes" "systemd-sysext" "vkcubepp" "col" "ksecretd" "avifgainmaputil" "arptables" "setfattr" "sync-color-schemes" "fzf-share" "akonadi_google_resource" "gtf" "pinky" "unix_chkpwd" "import" "ppdc" "sfdisk" "setxkbmap" "ping" "resizepart" "rnano" "dumpe2fs" "ssh-add" "nano" "depmod" "animate" "pw-mididump" "rename" "nh" "nixos-help" "akonadi_mbox_resource" "lscpu" "dwebp" "udisksctl" "zstd" "multirender_test" "iptables-nft-restore" "kscreen-console" "hexdump" "spd-conf" "lvresize" "sudoreplay" "mimeview" "cancel" "fsadm" "pdftexi2dvi" "false" "wpa_cli" "dd" "akonadi_openxchange_resource" "xtables-monitor" "xauth" "grpconv" "lsipc" "lsmod" "importctl" "git-cvsserver" "ebook-convert" "lpinfo" "vgs" "kioclient" "tput" "lpstat" "keditfiletype" "markdown-calibre" "size" "nix-fetchers-tests" "git-shell" "baloosearch6" "plasma-systemmonitor" "gpasswd" "realpath" "simpress" "pipewire-avb" "gwenview_importer" "bluedevil-wizard" "systemsettings" "groupmod" "mkpasswd" "xrandr" "fc-conflist" "dosfsck" "typescript-language-server" "pivot_root" "dotlock" "wineg++" "grep" "winecfg" "ktrash6" "kde-geo-uri-handler" "nvidia-cuda-mps-server" "dmesg" "advtest" "xterm" "systemd-run" "fsck.msdos" "curl" "xdg-mime" "lvcreate" "lpoptions" "gif2webp" "vgimportclone" "kwrited" "init" "ctest" "psfxtable" "sudo" "exrstdattr" "pvmove" "tee" "comm" "blkzone" "bzegrep" "obexd" "look" "mount" "mklost+found" "fusermount" "btpclientctl" "pkaction" "emacs" "dconf" "simple_dcraw" "etags" "ls" "fc-pattern" "powerprofilesctl" ".wine" "kalendarac" "cupsd" "cmp" "discord" "lvmconfig" "akonadi_icaldir_resource" "install" "last" "watch" "systemd-dissect" "lvremove" "getopt" "lvscan" "kcmshell6" "strip-ansi-escapes" "kmimetypefinder5" "yazi" "nix-copy-closure" "uname26" "readprofile" "ip6tables-nft" "hardlink" "reboot" "mlabel" "git" "task" "logoutd" "kdecp5" "rawtextdump" "lvdisplay" "nvim-python3" "md5sum" "logsave" "sensors-conf-convert" "infocmp" "ld.so" "scalc" "systemd-socket-activate" "nix-env" "montage" "link" "ptx" "logname" "pipewire-aes67" "resize" "capsh" "systemd-delta" "vulkaninfo" "mpv" "accessdb" "tune2fs" "nfbpf_compile" "heif-thumbnailer" "plasma-apply-wallpaperimage" "check-selftest" "ptargrep" "getconf" "makeinfo" "nohup" "nixos-build-vms" "sha384sum" "systemd-id128" "bits" "ipcrm" "gidmigrator" "drkonqi-coredump-gui" "libtoolize" "fstrim" "fallocate" "groupmems" "setpgid" "bzcmp" "chmod" "chfn" "timedatectl" "plasma-apply-lookandfeel" "utmpdump" "bluetooth-player" "pa-info" "pwd" "isaset" "paplay" "fsck.ext2" "strip" "setpriv" "mkfs.cramfs" "nixos-version" "raw-identify" "cvtsudoers" "sensors" "kcm-touchpad-list-devices" "fc-scan" "imap4d" "rsync-ssl" "lzmainfo" "sha1sum" "gatt-service" "fc-cat" "ebook-edit" "ip6tables-restore" "qtdiag" "enc2xs" "shutdown" "mkdir" "badblocks" "nm" "nmtui-edit" "spa-resample" "chown" "lprm" "unshare" "zdump" "oobtest" "groups" "iptables-apply" "krita" "ebook-polish" "spdsend" "startplasma-x11" "qtdiag6" "ebook-viewer" "machinectl" "passwd" "ld" "make" "bzgrep" "dumpkeys" "sync" "msidb" "script" "exrenvmap" "od" "yt-dlp" "mangoapp" "getcap" "wineconsole" "whatis" "zoxide" "mesg" "umount.udisks2" "mcat" "nix-daemon" "pvcreate" "chsh" "pipewire" "kfilemetadata_dump6" "dbus-run-session" "texi2pdf" "colrm" "uuidd" "xprop" "psfgettable" "plasma-apply-desktoptheme" "fzf" "usermod" "fincore" "ibus" "tsserver" "alejandra" "screendump" "pl2pm" "rfcomm" "rdma" "ip" "smath" "mkfs.msdos" "man-recode" "catman" "newusers" "ya" "sudo_sendlog" "kcminit_startup" "ebook-device" "fancontrol" "pvresize" "git-http-backend" "imgcmp" "sdptool" "prove" ".krita-wrapped_" "umount" "tc" "tac" "ppdmerge" "bdaddr" "getfattr" "g++" "lvchange" "nvidia-bug-report.sh" "login" "lvm" "pipewire-vulkan" "sulogin" "cp" "iptables-xml" "blkdiscard" "akonadi_knut_resource" "ledger" "arptables-nft-save" "iptables-legacy-restore" "host" "pw-profiler" "base64" "bluemoon" "lsclocks" "pkill" "git-upload-pack" "uuidparse" "blueman-services" "which" "hcisecfilter" "l2ping" "mbadblocks" "zdiff" "heif-enc" "nsenter" "unexpand" "mcomp" "systemctl" "kwin_wayland" "pactl" "fc-cache" "ssh-agent" "zgrep" "fsck.minix" "spd-say" "vgextend" "pw-midirecord" "cupsfilter" "busctl" "ptar" "btgatt-server" "lzless" "vgcreate" "rev" "assistant" "elisa" "hciconfig" "dirname" "kinfocenter" "blueman-sendto" "avifenc" "ebtables-nft-restore" "starship" "man" "c++filt" "lupdate" "logger" "l2test" "ldconfig" "tset" "tastenbrett" "isotest" "rsync" "lsblk" "systemd-stdio-bridge" "tty" "startplasma-wayland" "composite" "pam_timestamp_check" "uname" "ebtables-translate" "kate" "nix-store" "generate-bidi" "ip6tables-save" "akonadi_etesync_resource" "ip6tables-legacy-save" "xzcat" "krdpserver" "wmc" "ldattach" "rtkitctl" "gimp" "ulockmgr_server" "readmsg" "breeze-settings6" "kwrite" "akonadictl" "pw-top" "systemd-analyze" "btproxy" "mkfs.vfat" "chacl" "halt" "mesh-cfgtest" "zstdmt" "dbus-uuidgen" "ipcmk" "cal" "ptardiff" "inkview" "ksvgtopng5" "nvidia-debugdump" "pwunconv" "mformat" "pvremove" "lvmsadc" "lpadmin" "emacsclient" "getpcaps" "dmsetup" "networkctl" "w" "printf" "rtlfw" "libtool" "mkfs.minix" "dircolors" "ebtables-save" "hwclock" "perldoc" "mkfs" "outpsfheader" "img2webp" "meshctl" "unopkg" "mk_cmds" "routel" "vgsplit" "expiry" "ranlib" "zathura-sandbox" "dbus-cleanup-sockets" "mmove" "isadump" "write" "test-runner" "findmnt" "pw-container" "unlzma" "Xwayland" "mmcli" "exrmultipart" "mandb" "bootctl" "whoami" "setcap" "showkey" "wpa_supplicant" "hcieventmask" "clear" "cut" "kmimetypefinder" "mesh-cfgclient" "fsck" "pidof" "inkscape" "lpc" "pwmconfig" "openvt" "ipcs" "systemd-umount" "su" "mke2fs" "kmenuedit" "xzless" "vgcfgrestore" "ld.gold" "exrmaketiled" "xtables-nft-multi" "git-jump" "nvidia-settings" "kded6" "fetch-ebook-metadata" "mkfs.fat" "setpalette" "fc-validate" "poweroff" "magick-script" "xdg-settings" "wezterm-mux-server" "bzip2recover" "winebuild" "qdistancefieldgenerator" "kbroadcastnotification" "dbus-monitor" "renice" "nm-online" "seq2bseq" "uclampset" "ebtables-restore" "doas" "servicemenuinstaller" "udevadm" "akonadi2xml" "fsfreeze" "sprof" "nokfw" "bzfgrep" "useradd" "spectacle" "ksvgtopng" "kioclient5" "lconvert" "rctest" "plasma_session" "pod2texi" "calibre" "xzmore" "calibre-server" "setleds" "wpctl" "frm" "linux32" "kdecp" "heif-info" "ssh-keygen" "setterm" "spa-monitor" "split" "clrunimap" "lzcat" "vgcfgbackup" "calibre-uninstall" "kde-open" "nameif" "regsvr32" "pvdisplay" "ctags" "gawk" "faillog" "sysctl" "newgrp" "vdpa" "blueman-adapters" "slattach" "getkeycodes" "winepath" "e2freefrag" "piconv" "pw-metadata" "ul" "dcraw_half" "perl5.40.0" "konsoleprofile" "plasma-interactiveconsole" "showconsolefont" "kbd_mode" "bluedevil-sendfile" "entr" "runcon" "e2image" "bashbug" "factor" "blkpr" "kde-inotify-survey" "fadvise" "gprof" "nvidia-cuda-mps-control" "zic" "netstat" "nmtui" "chgrp" "widl" "akonadi_control" "sg" "chpasswd" "winecpp" "btiotest" "lvm_import_vdo" "lsns" "btop" "lvmsar" "hd" "lzmore" "gmic" "exrmultiview" "arptables-nft-restore" "avtest" "gimp-test-clipboard-2.0" "mdel" "linguist" "kexec" "base32" "webpinfo" "perlthanks" "lzfgrep" "blockdev" "avinfo" "tzselect" "vdir" "vgscan" "vgconvert" "chcon" "nmtui-hostname" "exrmanifest" "objdump" "xclip-pastefile" "coresched" "ark" "winemaker" "insmod" "vigr" "delpart" "akonadi_agent_launcher" "kinfo" "pod2man" "cupsenable" "calibredb" "signond" "systemd-mount" "ebrowse" "plasma-localegen-helper" "mxtar" "lzmadec" "btconfig" "sftp" "switch_root" "taskset" "4channels" "manpath" "decodemail" "mcheck" "pw-dot" "systemd-resolve" "hid2hci" "protontricks-launch" "kscreen-doctor" "grpck" "identify" "wine64" "splain" "btpclient" "gimptool-2.0" "w3m" "prlimit" "tsc" "x86_64" "sshd" "calibre-complete" "btinfo" "dbus-update-activation-environment" "ip6tables-legacy" "nix-hash" "Xorg" "corelist" "ddgr" "plasma-emojier" "lvextend" "kstart5" "mount.fuse" "speech-dispatcher" "lvconvert" "systemd-sysusers" "plasmashell" "scotest" "emacs-30.2" "solid-action-desktop-gen" "faillock" "lsattr" "unxz" "uuidgen" "google-chrome-stable" "wpexec" "ebtables-nft-save" "iceauth" "akonadi_vcarddir_resource" "sleep" "xdg-email" "uptime" "cupsdisable" "rm" "xargs" "as" "nisdomainname" "ld.bfd" "i386" "e2mmpstatus" "pipesz" "hciattach" "ppdi" "pw-play" "getfacl" "designer" "ibus-daemon" "bash" "tsort" "iconv" "touch" "Xvfb" "code" "basenc" "mu-mh/" "kiconfinder6" "avifdec" "nl" "enosys" "pkttyagent" "krunner" "mrd" "kfontinst" "lz" "wezterm-gui" "ksystemstats" "btsnoop" "ktelnetservice6" "resize2fs" "true" "scalar" "lesskey" "soffice" "rtstat" "jq" "xlsclients" "spawn_login" "join" "lastb" "xtables-legacy-multi" "gimp-console-2.10" "akonadiserver" "bluetoothctl" "mda" "ps" ".wine64" "setlogcons" "sed" "hostname" "mktemp" "mdir" "loginctl" "sddm" "kwalletmanager5" "xdg-open" "ssh-keyscan" "lrf2lrs" "hostnamectl" "exr2aces" "less" "guimb" "infotocap" "plasma-apply-cursortheme" "signonpluginprocess" "kwalletd6" "xrdb" "du" "wget" "nmcli" "b2sum" "ranger" "steam-run" "ksplashqml" "lookandfeeltool" "jasper" "akonadi_ews_resource" "kpackagetool6" "encguess" "mkdosfs" "eject" "perlbug" "pvchange" "ip6tables-legacy-restore" "pop3d" "krita_version" "cc" "zless" "echo" "Xnest" "resolvectl" "bridge" "pw-encplay" "scriptlive" "mailutils" "ip6tables" "test" "mdoctorfat" "sha256sum" "choom" "modprobe" "kwallet-query" "blkdeactivate" "xzgrep" "captoinfo" "free" "mail" "kde-open5" "bcmfw" "pod2html" "mailutils-config" "baloo_filemetadata_temp_extractor" "uz" "nfnl_osf" "hostid" "xdg-user-dirs-update" "iptables-nft" "zfgrep" "egrep" "rtacct" "chcpu" "mkfs.ext2" "mkhomedir_helper" "tree" "akonadi_rds" "kunifiedpush-distributor" "nix-flake-tests" "winefile" "hcidump" "cltest" "shasum" "makedb" "dcb" "pamon" "zforce" "cpp" "psfstriptable" "nix-channel" "mzip" "mount.fuse3" "stat" "parec" "systemd-cgtop" "systemd-cryptsetup" "from" "wineserver" "kde-systemd-start-condition" "make-bcache" "akonadi_birthdays_resource" "kcursorgen" "tic" "json_pp" "putmail" "ssh" "systemd-hwdb" "zsh" "iptables-restore-translate" "sotruss" "lvreduce" "userdel" "ksmserver" "vgexport" "pvs" "nc" "debugfs" "firefox" "pw-record" "partx" "pw-dsdplay" "resizecons" "elfedit" "apropos" "libnetcfg" "ip6tables-nft-save" "systemd-detect-virt" "who" "pulseaudio" "podchecker" "nix-collect-garbage" "xdg-user-dir" "expand" "id" "printenv" "ypdomainname" "koi8rxterm" "fsck.ext3" "qtplugininfo" "fsck.cramfs" "nixos-generate-config" "protontricks" "groupdel" "iptables-nft-save" "messages" "fastfetch" "modinfo" "akonadi_maildispatcher_agent" "rtcwake" "nix-instantiate" "minfo" "uniq" "systemd-tmpfiles" "slabtop" "shred" "popauth" "fgconsole" "dbus-launch" "obexctl" "fc-match" "portablectl" "scp" "exch" "pmap" "ktexteditor-script-tester6" "cat" "gunzip" "diff3" "lzdiff" "shuf" "kdemv" "mcopy" "pwck" "addpart" "comsatd" "keditfiletype5" "plasma_waitforname" "chmem" "devlink" "systemd-notify" "uncompress" "xsetroot" "wezterm" "eddystone" "swriter" "e2undo" "sddm-greeter-qt6" "pw-dump" "exrmakepreview" "journalctl" "systemd-inhibit" "homectl" "mkswap" "lrelease" "localedef" "mv" "systemd-ac-power" "obex-data-server" "c++" "sha512sum" "akonadi_pop3_resource" "lpq" "ip6tables-translate" "vkcube" "getsubids" "arptables-save" "spawn_console" "readlink" "nologin" "agetty" "nstat" "varlinkctl" "setvesablank" "blueman-tray" "amuFormat.sh" "xzdec" "sudo_logsrvd" "tail" "wc" "vgmknodes" "btattach" "NetworkManager" "dbus-daemon" "df" "nix-build" "nil" "arptables-translate" "bzcat" "pkexec" "find" "arping" "ippfind" "display" "kstatsviewer" "exrheader" "mpv_identify.sh" "xdg-screensaver" "nmtui-connect" "mpd" "pzstd" "git-upload-archive" "lzegrep" "ppdpo" "ebtables" "cpan" "balooshow6" "dnsdomainname" "nvidia-powerd" "kbuildsycoca6" "install-info" "postprocessing_benchmark" "btgatt-client" "vgimportdevices" "users" "sort" "captree" "mkmanifest" "texi2dvi" "steam" "chroot" "dwp" "xclip" "chrt" "kapplymousetheme" "gzexe" "mapscrn" "vmstat" "wall" "kritarunner" "qdbus" "more" "gencat" "mdeltree" "kmod" "xzcmp" "systemd-machine-id-setup" "qutebrowser" "time" "conjure" "pw-v4l2" "scriptreplay" "h2ph" "calibre-customize" "e2scrub_all" "env" "nixos-option" "pr" "uxterm" "nfsynproxy" "xz" "xzdiff" "nproc" "vgremove" "rifle" "plasma-shutdown" "lslocks" "xembedsniproxy" "stty" "systemd-repart" "losetup" "bzmore" "fsck.vfat" "bunzip2" "cupsreject" "pkcheck" "plasma-activities-cli6" "wireplumber" "e2label" "namei" "ebook-meta" "cmake" "dcraw_emu" "rmmod" "winemine" "prettier" "tload" "tipc" "lrfviewer" "setfacl" "systemd-escape" "gcc" "timeout" "kstart" "rfkill" "btmon-logger" "asapcat" "pw-link" "objcopy" "ippeveprinter" "ip6tables-restore-translate" "pwdx" "perl" "spa-inspect" "basename" "pw-reserve" "texindex" "vmcore-dmesg" "w3mimgdisplay" "lastlog2" "convert" "localectl" "tr" "regedit" "compile_et" "ModemManager" "plasma-browser-integration-host" "mknod" "vgck" "nixos-install" "kwin_x11" "mkfs.ext4" "route" "Discord" "akonadi_agent_server" "knetattach" "cfdisk" "iconvconfig" "pldd" "lzcmp" "lsfd" "vipw" "qdbusviewer" "mtrace" "cpack" "iptables-legacy" "xsubpp" "pvscan" "pw-cat" "mdu" "btmon" "create-image" "kbdrate" "kfontview" "bneptest" "mangohud" "wdctl" "sdraw" "zstdless" "bzless" "plasma-apply-colorscheme" "arptables-nft" "winedbg" "setkeycodes" "readelf" "lpr" "lmtpd" "cwebp" "kbdinfo" "compare" "plasmawindowed" "lsirq" "pvck" "X" "kcminit" "top" "arpd" "w3mman" "akonadi_ical_resource" "flock" "ar" "cupsctl" "swapon" "gimp-console" "bluetoothd" "texi2any" "e4crypt" "pixeltool" "fsck.fat" "winetricks" "mogrify" "waitpid" "orca" "ctrlaltdel" "krunner-plugininstaller" "pidwait" "wrc" "ip6tables-apply" "head" "pasuspender" "unicode_start" "lzgrep" "systemd-tty-ask-password-agent" "getent" "zegrep" "kwin_wayland_wrapper" "ag-backup" "wipefs" "gmenudbusmenuproxy" "movemail" "sln" "column" "libreoffice" "systemd-ask-password" "mii-tool" "xtrace" "akonadiselftest" "dolphin" "nixos-container" "akonadi_mixedmaildir_resource" "unlink" "lslogins" "copyq" "pw-midiplay" "akonadi_ewsmta_resource" "spa-acp-tool" "mountpoint" "akonadi_maildir_resource" "ifstat" "strace" "locale" "webpmux" "ssh-copy-id" "dbus-send" "sum" "plasma-open-settings" "e2fsck" "akonadi_newmailnotifier_agent" "obsidian" "znew" "info" "hex2hcd" "hcitool" "mcaptest" "gzip" "command-not-found" "nvim" "git-receive-pack" "rtmon" "akonadi_vcard_resource" "cpio" "iptables-translate" "sha224sum" "ln" "xset" "systemd-vpick" "iptables-restore" "zcat" "zstdgrep" "kcolorschemeeditor" "xdg-icon-resource" "akonadi_migration_agent" "gatttool" "mount.ddi" "systemd-creds" "pacmd" "broot" "pathchk" "Xephyr" "nix-prefetch-url" "nixos-firewall-tool" "unzstd" "sieve" "mangoplot" "lrs2lrf" "ctstat" "lazygit" "wine64-preloader" "fsck.ext4" "e2scrub" "pam_namespace_helper" "vgdisplay" "mkfs.ext3" "bzip2" "ibus-setup" "umpv" "filefrag" "zstdcat" "pod2usage" "e4defrag" "attr" "resolvconf" "ibeacon" "nss" "iptables" "vgimport" "irqtop" "wineboot" "mcd" "lsmem" "unicode_stop" "vgchange" "wpa_passphrase" "bzdiff" "systemd-nspawn" "dbus-test-tool" "strace-log-merge" "systemd-path" "lact" "sh" "chgpasswd" "systemd-cat" "xclip-copyfile" "gimp-2.10" "drkonqi-sentry-data" "lvs" "cupsaccept" "csplit" "ss" "date" "gwenview" "chage" "blueman-manager" "stream" "parecord" "fatlabel" "upower" "arp" "fzf-tmux" "magick" "coredumpctl" "nix-info" "linux64" "obexftp" "zcmp" "xdg-desktop-menu" "ipptool" "mem_image" "btmgmt" "akonadi_contacts_resource" "pwconv" "function_grep.pl" "[" "xinput" "akonaditest" "setsid" "oomctl" "mpartition" "swapoff" "update-mime-database" "mshowfat" "mpc" "newgidmap" "dosfslabel" "perlivp" "setarch" "mkfs.bfs" "grpunconv" "obex-server-tool" "hwdb" "systemd-cgls" "monitor-sensor" "rg" "nix-shell" "cksum" "expr" "lutris" "lvmdiskscan" "numfmt" "akonadi_imap_resource" "whereis" "spa-json-dump" "zathura" "mangohudctl" "mren" "dmstats" "vgreduce" "ifconfig" "unprocessed_raw" "kde-inhibit" "pipewire-pulse" "h2xs" "sudoedit" "fgrep" "plipconfig" "nix-expr-tests" "psfaddtable" "mcookie" "chvt" "nixos-rebuild" "pw-config" "zmore" "half_mt" "sdiff" "deallocvt" "setvtrgb" "obex-client-tool" "fusermount3" "solid-hardware6" "rarp" "ag-tool" "strings" "xzfgrep" "nixos-enter" "instmodsh" "mpris-proxy" "clockdiff" "fmt" "nice" "fc-list" "pgrep" "systemd-cryptenroll" "loadunimap" "kaccess" "visudo" "tar" "prismlauncher" "pw-mon" "dir" "wine" "lessecho" "mshortname" "ionice" "sensors-detect" "tracepath" "reset" "ip6tables-nft-restore" "mmd" "runuser" "git-credential-netrc" "nix-util-tests" "setfont" "lp" "xclip-cutfile" "khelpcenter" "lexgrog" "mmount" "domainname" "msiexec" "xzegrep" "pcprofiledump" "colcrt" "mkfifo" "awk" "patch" "ldd" "fdisk" "fd" "cupstestppd" "ppdhtml" "lzma" "mtoolstest" "mattrib" "vgmerge" "pw-cli" "heif-dec" "setmetamode" "systemd-confext" "chattr" "swaplabel" "truncate" "fold" "coreutils" "calibre-parallel" "nix" "nix-store-tests" ".gimp-2.10-wrapped_" "groupadd" "arptables-restore" "mtype" "akonadi_davgroupware_resource" "isosize" "userdbctl" "imginfo" "seq" "exrinfo" "xdg-terminal" "tabs" "balooctl6" "systemd-home-fallback-shell" "run0" "akonadi-db-migrator" "paste" "../" "./")
+
+ ("/home/michal/.emacs.d/snippets/" (27015 46075 502058 454000) "../" "text-mode/" "./")
+
+ ("/home/michal/mapa/sobota/" (27014 46707 106479 143000) "wzorce/" "radosne/" "bolesne/" "chwalebne/" "README.org" "swiatla/" "../" "./")
+
+ ("/home/michal/bajka/opowiadanie/" (27011 57556 552592 589000) "opowiadanie1.org" "../" "./")
+
+ ("/home/michal/bajka/szablony/" (27011 57499 145546 493000) "szablon2" "sazblon1.org" "szablon3.org" "../" "./")
+
+ ("/home/michal/bajka/" (27011 57256 234352 626000) "opowiadanie/" "szablony/" "../" "./")
+
+ ("/home/michal/mapa/ściągi/" (27009 43688 754691 890000) "Rejestry.org~" "Rejestry.org" "Bluetooth.org" "Bookmarks_Projects" "dwa-okna.org" "../" "Bookmarks_Projects~" "./")
+
+ ("/etc/nixos/home/" (27005 4619 801051 887000) "michal.nix~" "michal.nix" "zsh/" "../" "./")
+
+ ("/home/michal/mapa/howto/" (27009 1053 753609 704000) "nixos-flake-safe-workflow.org" "safe-workflow.org" "nixos-disk-space.org" "nixos-garbage-collection.org" "zamykanie-sesji.org" "dired-basic.org" "nixos-rollback.org" "nixos-testy-bezpieczne.org" "standardy.org" "git-safe-workflow.org" "nixos-emergency-panic-mode.org" "README.org" "budowa-nixos.org" "zasady-projektu.org" "../" "./")
+
+ ("/home/michal/mapa/templates/" (26995 62558 409826 944000) "petla-template.org" "../" "./")
+
+ ("/home/michal/mapa/ops/" (26991 62011 923787 397000) "wezterm-keybindings-tmux-style.org" "vim-rejestry-kanon.org" "vim-basics-layer0.org" "yazi-file-manager-decision.org" "nix-build-errors-reading.org" "nss-decision-workflow.org" "rg-fd-tree-decision.org" "panic-index.org" "journalctl-logs-minimum.org" "kitty.org" "vim-panic-mode.org" "doom-emacs.org" "sed-vs-awk-decision.org" "nix-warnings-find-source.org" "grep-decision-cheatsheet.org" "vim-rejestry-makra.org" "README.org" "pipes-xargs-practical.org" "vim-makra-i-rejestry.org" "nvim-schowek-systemowy.org" "nvim-multi-edit-native.org" "network-debug-minimum.org" "nixos-flake-check-build-switch.org" "rg-vs-grep.org" "git-nixos-rollback.org" "../" "zellij-decision-manual.org" "./")
+
+ ("/home/michal/mapa/emacs/" (26995 46370 431351 171000) "doom/" "../" "./")
+
+ ("/home/michal/mapa/docs/emacs/" (26994 47551 870724 235000) "keybindings-collisions.org" "../" "./")
+
+ ("/home/michal/mapa/docs/" (26994 47448 846704 133000) "doom-dired-bulk-case.org" "komunikacja.org" "emacs/" "README.org" "../" "./")
+
+ ("/home/michal/org-roam/" (27002 24071 945003 969000) "../" "./")
+
+ ("/nix/" (26944 40417 795339 915000) "var/" "store/" "../" "./")
+
+ ("/home/" (26944 40657 75051 683000) "michal/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

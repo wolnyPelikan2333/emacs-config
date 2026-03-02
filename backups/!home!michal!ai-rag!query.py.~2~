@@ -1,0 +1,69 @@
+import json
+import math
+import urllib.request
+
+OLLAMA_EMBED_URL = "http://localhost:11434/api/embeddings"
+EMBED_MODEL = "deepseek-coder:6.7b"  # musi być ten sam co przy indeksowaniu
+
+# ----------------------------------------
+# Cosine similarity
+# ----------------------------------------
+def cosine_similarity(a, b):
+    dot = sum(x * y for x, y in zip(a, b))
+    norm_a = math.sqrt(sum(x * x for x in a))
+    norm_b = math.sqrt(sum(y * y for y in b))
+    return dot / (norm_a * norm_b)
+
+# ----------------------------------------
+# Embedding przez Ollama (bez requests)
+# ----------------------------------------
+def get_embedding(text):
+    payload = json.dumps({
+        "model": EMBED_MODEL,
+        "prompt": text
+    }).encode("utf-8")
+
+    request = urllib.request.Request(
+        OLLAMA_EMBED_URL,
+        data=payload,
+        headers={"Content-Type": "application/json"},
+        method="POST"
+    )
+
+    with urllib.request.urlopen(request) as response:
+        result = json.loads(response.read().decode())
+        return result["embedding"]
+
+# ----------------------------------------
+# MAIN
+# ----------------------------------------
+
+# 1️⃣ Wczytaj indeks
+with open("index.json", "r") as f:
+    index = json.load(f)
+
+# 2️⃣ Zapytanie
+query = input("Zapytanie: ")
+
+# 3️⃣ Embedding zapytania
+query_embedding = get_embedding(query)
+
+# 4️⃣ Policz similarity
+results = []
+
+for item in index:
+    score = cosine_similarity(query_embedding, item["embedding"])
+    results.append((score, item))
+
+# 5️⃣ Sortuj malejąco
+results.sort(reverse=True, key=lambda x: x[0])
+
+# 6️⃣ Top 5
+top_k = 5
+
+for score, item in results[:top_k]:
+    print("\n========================================")
+    print(f"Score: {score:.4f}")
+    print(f"Plik: {item['path']}")
+    print("----------------------------------------")
+    print(item["text"][:800])

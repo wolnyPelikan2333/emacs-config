@@ -1,0 +1,197 @@
+;; HARD DISABLE desktop/session restore
+(setq desktop-enable nil)
+(setq desktop-load-locked-desktop nil)
+
+
+(require 'package)
+
+;; Ustawienie repozytoriów z pakietami (standardowe)
+(setq package-archives '(
+                         ("gnu" . "https://elpa.gnu.org/packages/")
+                         ("melpa" . "https://melpa.org/packages/")
+                         ("org" . "https://orgmode.org/elpa/")
+                         ))
+
+(package-initialize)
+
+;; Upewnij się, że `use-package` jest zainstalowane
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+
+;; Load default Emacs behavior settings
+(load (locate-user-emacs-file "defaults.el") 'noerror 'nomessage)
+
+;; Load global keybindings
+(load (locate-user-emacs-file "keys.el") 'noerror 'nomessage)
+
+(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+(require 'buffer-macros)
+;; ============================
+;; Sesja i zapisywanie stanu
+;; ============================
+;;(desktop-save-mode 1)
+;;(setq desktop-dirname "~/.emacs.d/desktop/")
+;;(setq desktop-restore-eager 10)
+
+;; ============================
+;; Historia i ostatnio otwarte pliki
+;; ============================
+(savehist-mode 1)
+(setq history-length 1000)
+
+(recentf-mode 1)
+(setq recentf-max-saved-items 100)
+
+
+;;   :config
+;;   (persp-mode 1))
+
+;; Opcje zapisu sesji
+(setq persp-save-dir "~/.emacs.d/persp-confs")
+(setq persp-auto-save-filename "persp-auto-save")
+
+;; ============================
+;;  package instalation
+;; ============================
+(unless (package-installed-p 'which-key)
+  (package-refresh-contents)
+  (package-install 'which-key))
+(which-key-mode 1)
+
+(unless (package-installed-p 'vterm)
+  (package-refresh-contents)
+  (package-install 'vterm))
+
+(unless (package-installed-p 'nix-mode)
+  (package-refresh-contents)
+  (package-install 'nix-mode))
+
+(unless (package-installed-p 'multiple-cursors)
+  (package-refresh-contents)
+  (package-install 'multiple-cursors))
+
+;; ============================
+;; Line numbers — opt-in only
+;; ============================
+(setq display-line-numbers-type 'relative)
+
+(add-hook 'prog-mode-hook
+          (lambda ()
+            (display-line-numbers-mode 1)))
+
+(add-hook 'vterm-mode-hook
+          (lambda ()
+            (display-line-numbers-mode 0)))
+
+(add-hook 'org-mode-hook
+          (lambda ()
+            (setq-local display-line-numbers nil)))
+
+;; ============================
+;; Org-mode + Org Agenda
+;; ============================
+(require 'org)
+
+(setq org-agenda-files
+      '("~/mapa/sesja.org"
+        "~/mapa/plan.org"))
+(setq org-default-notes-file "~/mapa/sesja.org")
+
+;; ============================
+;; UI
+;; ============================
+(set-face-attribute 'default nil
+                    :font "JetBrains Mono"
+                    :height 120)
+
+(defun my/dashboard-open-same-window (path)
+  "Open PATH in the same window, killing other windows first."
+  (interactive)
+  (when (> (count-windows) 1)
+    (delete-other-windows))
+  (if (file-directory-p path)
+      (dired path)
+    (find-file path)))
+
+
+(use-package dashboard
+  :ensure t
+  :init
+  (setq dashboard-set-navigator t)
+  (setq initial-scratch-message nil)
+  (setq dashboard-startup-banner "~/.config/emacs/images/dtmacs-logo.png")
+
+  ;; AGENDA (info)
+  (setq dashboard-items '((agenda . 10)))
+
+  ;; PRZYCISKI / LINKI (DZIAŁAJĄ ZAWSZE)
+  (setq dashboard-navigator-buttons
+        `(((nil
+            "NixOS config"
+            "Open NixOS configuration"
+            (lambda (&rest _)
+              (my/dashboard-open-same-window
+               "/etc/nixos/nixos/configuration.nix")))
+
+           (nil
+            "Home Manager"
+            "Open Home Manager config"
+            (lambda (&rest _)
+              (my/dashboard-open-same-window
+               "/etc/home/michal.nix")))
+
+           (nil
+            "Emacs init.el"
+            "Open init.el"
+            (lambda (&rest _)
+              (my/dashboard-open-same-window
+               "~/.emacs.d/init.el")))
+
+           (nil
+            "Mapa – skróty"
+            "Open skróty.org"
+            (lambda (&rest _)
+              (my/dashboard-open-same-window
+               "~/mapa/skróty.org")))
+
+           (nil
+            "Mapa (Dired)"
+            "Open mapa directory"
+            (lambda (&rest _)
+              (my/dashboard-open-same-window
+               "~/mapa"))))))
+
+  :config
+  (dashboard-setup-startup-hook))
+
+
+;;; ===============================
+;;; Dired (built-in)
+;;; ===============================
+(setq dired-use-ls-dired t)
+(setq dired-listing-switches "-alh --group-directories-first --color=auto")
+
+
+
+(load-theme 'wombat t)
+
+(setq initial-buffer-choice
+      (lambda ()
+        (find-file "~/mapa/plan.org")))
+
+
+
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages '(iedit multiple-cursors nix-mode persp-mode vterm)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

@@ -1,0 +1,24 @@
+CMakeFiles/vterm-module.dir/utf8.c.o: \
+ /home/michal/.emacs.d/elpa/vterm-20251119.1653/utf8.c \
+ /nix/store/1v9ggwkpb0xy708s11s1g9fhinn3b06r-glibc-2.40-66-dev/include/stdc-predef.h \
+ /home/michal/.emacs.d/elpa/vterm-20251119.1653/utf8.h \
+ /nix/store/y28c83zz73yr4vwz1fsl4nsrn6yz5fj0-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/include/stdbool.h \
+ /nix/store/y28c83zz73yr4vwz1fsl4nsrn6yz5fj0-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/include/stddef.h \
+ /nix/store/y28c83zz73yr4vwz1fsl4nsrn6yz5fj0-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/include/stdint.h \
+ /nix/store/1v9ggwkpb0xy708s11s1g9fhinn3b06r-glibc-2.40-66-dev/include/stdint.h \
+ /nix/store/1v9ggwkpb0xy708s11s1g9fhinn3b06r-glibc-2.40-66-dev/include/bits/libc-header-start.h \
+ /nix/store/1v9ggwkpb0xy708s11s1g9fhinn3b06r-glibc-2.40-66-dev/include/features.h \
+ /nix/store/1v9ggwkpb0xy708s11s1g9fhinn3b06r-glibc-2.40-66-dev/include/features-time64.h \
+ /nix/store/1v9ggwkpb0xy708s11s1g9fhinn3b06r-glibc-2.40-66-dev/include/bits/wordsize.h \
+ /nix/store/1v9ggwkpb0xy708s11s1g9fhinn3b06r-glibc-2.40-66-dev/include/bits/timesize.h \
+ /nix/store/1v9ggwkpb0xy708s11s1g9fhinn3b06r-glibc-2.40-66-dev/include/sys/cdefs.h \
+ /nix/store/1v9ggwkpb0xy708s11s1g9fhinn3b06r-glibc-2.40-66-dev/include/bits/long-double.h \
+ /nix/store/1v9ggwkpb0xy708s11s1g9fhinn3b06r-glibc-2.40-66-dev/include/gnu/stubs.h \
+ /nix/store/1v9ggwkpb0xy708s11s1g9fhinn3b06r-glibc-2.40-66-dev/include/gnu/stubs-64.h \
+ /nix/store/1v9ggwkpb0xy708s11s1g9fhinn3b06r-glibc-2.40-66-dev/include/bits/types.h \
+ /nix/store/1v9ggwkpb0xy708s11s1g9fhinn3b06r-glibc-2.40-66-dev/include/bits/typesizes.h \
+ /nix/store/1v9ggwkpb0xy708s11s1g9fhinn3b06r-glibc-2.40-66-dev/include/bits/time64.h \
+ /nix/store/1v9ggwkpb0xy708s11s1g9fhinn3b06r-glibc-2.40-66-dev/include/bits/wchar.h \
+ /nix/store/1v9ggwkpb0xy708s11s1g9fhinn3b06r-glibc-2.40-66-dev/include/bits/stdint-intn.h \
+ /nix/store/1v9ggwkpb0xy708s11s1g9fhinn3b06r-glibc-2.40-66-dev/include/bits/stdint-uintn.h \
+ /nix/store/1v9ggwkpb0xy708s11s1g9fhinn3b06r-glibc-2.40-66-dev/include/bits/stdint-least.h

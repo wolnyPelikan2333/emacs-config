@@ -1,0 +1,58 @@
+#+title: Rozważania
+#+startup: folded
+
+* O co tu chodzi
+
+To repozytorium jest zapisem drogi.
+
+Życie jest drogą.
+Jedna medytacja jest jednym krokiem na tej drodze.
+Jeden krok = jeden plik.
+
+Nie jest to dziennik duchowy ani notatki do studiowania Biblii.
+To ślady kroków, które już zostały postawione.
+
+* Struktura
+
+Każda Ewangelia ma swój katalog:
+
+- Mt/
+- Mk/
+- Lk/
+- J/
+
+W każdym katalogu:
+- jeden plik = jedna medytacja
+- nazwa pliku = data w formacie DD-MM-YYYY.org
+
+Struktura pliku jest stała i oparta o lectio divina
+w tradycji karmelitańskiej.
+
+* Zasady (dla mnie)
+
+- nie poprawiam starych kroków
+- nie uzupełniam „po czasie”
+- jeśli wracam do tego samego tekstu, ale jestem w innym miejscu —
+  powstaje nowy plik
+- kontemplacja nie musi zostawić żadnego zapisu
+
+To repozytorium nie ma być kompletne ani równe.
+Ma być prawdziwe.
+
+* Narzędzie
+
+Pliki są tworzone w Emacsie jednym poleceniem,
+które generuje:
+- nowy plik
+- dzisiejszą datę
+- stały szablon
+
+Git służy wyłącznie do zachowania historii drogi,
+nie do kontroli ani oceny.
+
+* Uwaga końcowa
+
+Jeśli kiedyś forma zacznie przeszkadzać ciszy,
+forma przestaje obowiązywać.
+
+Droga jest ważniejsza niż zapis.
