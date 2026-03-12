@@ -1,11 +1,30 @@
+# package managers
 elpa/
 elpaca/
 straight/
+
+# caches
 cache/
-auto-save-list/
 eln-cache/
+
+# autosave
+auto-save-list/
+backups/
+
+# runtime data
 recentf
 places
+history
+ido.last
+bookmarks
+.emacs.desktop
+.emacs.desktop.lock
+
+# network
 url/
+
+# transient state
 transient/
+
+# compiled
 *.elc

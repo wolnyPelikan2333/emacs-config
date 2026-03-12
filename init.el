@@ -62,13 +62,16 @@
 ;; ============================
 ;; Packages
 ;; ============================
-(dolist (pkg '(use-package which-key vterm nix-mode multiple-cursors js2-mode json-mode pdf-tools))
-  (unless (package-installed-p pkg)
-    (package-refresh-contents)
-    (package-install pkg)))
 
-(which-key-mode 1)
-(require 'json-mode)
+(defvar my/packages
+  '(use-package which-key vterm nix-mode multiple-cursors js2-mode json-mode pdf-tools))
+
+(unless package-archive-contents
+  (package-refresh-contents))
+
+(dolist (pkg my/packages)
+  (unless (package-installed-p pkg)
+    (package-install pkg)))
 
 ;; ============================
 ;; Nix
@@ -292,16 +295,123 @@
 (setq select-enable-clipboard t)
 (setq select-enable-primary t)
 
+(defun my/menu-dnia ()
+  "Menu dnia."
+  (interactive)
+  (let ((choice
+         (read-key
+          (propertize
+           "Dzień: [D] dzień modlitwy [d] rytm  [m] medytacja  [r] różaniec  [e] rachunek  [n] noc  [s] skrót  [p] sobota  [q] wyjście"
+           'face 'minibuffer-prompt))))
+    (pcase choice
+      (?D (my/dzien-modlitwy-jeden-plik))
+      (?d (my/rytm-dnia-dzis))
+      (?m (my/create-meditation-file))
+      (?r (my/create-rozaniec-file))
+      (?e (my/create-examen-file))
+      (?n (my/create-night-prayer-file))
+      (?s (my/create-skrotka-file))
+      (?p (my/create-sobota-file))
+      (?q (message "Menu zamknięte")))))
+
+(global-set-key (kbd "C-c d") #'my/menu-dnia)
+
+;; ============================
+;; Launcher
+;; ============================
+
+(defun my/launcher ()
+  "Prosty launcher Emacsa."
+  (interactive)
+  (let ((choice
+         (completing-read
+          "Launcher: "
+          '("dashboard"
+            "agenda"
+            "rytmdnia"
+            "medytacja"
+            "rozaniec"
+            "rachunek"
+            "noc"
+            "vterm"
+            "dired"
+            "mapa"))))
+    (pcase choice
+      ("dashboard" (dashboard-open))
+      ("agenda" (org-agenda nil "a"))
+      ("rytmdnia" (my/rytm-dnia-dzis))
+      ("medytacja" (my/create-meditation-file))
+      ("rozaniec" (my/create-rozaniec-file))
+      ("rachunek" (my/create-examen-file))
+      ("noc" (my/create-night-prayer-file))
+      ("vterm" (vterm))
+      ("dired" (dired "~"))
+      ("mapa" (dired "~/mapa")))))
+
+(global-set-key (kbd "C-c SPC") #'my/launcher)
+
 ;; ============================
 ;; Devotional files (EU date)
 ;; ============================
+
+;; ============================
+;; Tajemnice różańca
+;; ============================
+
+(defvar my/rozaniec-tajemnice
+  '(("radosne"
+     "Zwiastowanie"
+     "Nawiedzenie św. Elżbiety"
+     "Narodzenie Jezusa"
+     "Ofiarowanie Jezusa w świątyni"
+     "Znalezienie Jezusa w świątyni")
+
+    ("swiatla"
+     "Chrzest Jezusa w Jordanie"
+     "Cud w Kanie Galilejskiej"
+     "Głoszenie Królestwa Bożego"
+     "Przemienienie na górze Tabor"
+     "Ustanowienie Eucharystii")
+
+    ("bolesne"
+     "Modlitwa w Ogrójcu"
+     "Biczowanie"
+     "Cierniem ukoronowanie"
+     "Droga krzyżowa"
+     "Śmierć na krzyżu")
+
+    ("chwalebne"
+     "Zmartwychwstanie"
+     "Wniebowstąpienie"
+     "Zesłanie Ducha Świętego"
+     "Wniebowzięcie Maryi"
+     "Ukoronowanie Maryi")))
+;; ============================
+;; Tajemnica dnia (różaniec)
+;; ============================
+
+(defun my/rozaniec-dzis ()
+  "Zwraca tajemnicę różańca dla dzisiejszego dnia."
+  (pcase (format-time-string "%u")
+    ("1" "radosne")    ;; poniedziałek
+    ("2" "bolesne")    ;; wtorek
+    ("3" "chwalebne")  ;; środa
+    ("4" "swiatla")    ;; czwartek
+    ("5" "bolesne")    ;; piątek
+    ("6" "radosne")    ;; sobota
+    ("7" "chwalebne"))) ;; niedziela
+
 (defun my--eu-date () (format-time-string "%d-%m-%Y"))
 
 (defun my--choose-mystery ()
-  (completing-read "Tajemnica: " '("radosne" "bolesne" "chwalebne" "swiatla") nil t))
+  (let* ((today (my/rozaniec-dzis)))
+    (completing-read
+     (format "Tajemnica (RET = %s): " today)
+     '("radosne" "bolesne" "chwalebne" "swiatla")
+     nil t nil nil today)))
 
 (defun my/create-meditation-file ()
-  (let* ((dir "~/mapa/medytacja/")
+  (let* ((dir "~/mapa/Modlitwy/medytacja/")
          (date (my--eu-date))
          (file (expand-file-name (concat date ".org") dir)))
     (unless (file-exists-p dir)
@@ -346,7 +456,7 @@
 ;; ============================
 
 (defun my/create-examen-file ()
-  (let* ((dir "~/mapa/rachunek/")
+  (let* ((dir "~/mapa/Modlitwy/rachunek/")
          (date (my--eu-date))
          (file (expand-file-name (concat date ".org") dir)))
     (unless (file-exists-p dir)
@@ -391,7 +501,7 @@
 ;; ============================
 
 (defun my/create-night-prayer-file ()
-  (let* ((dir "~/mapa/noc/")
+  (let* ((dir "~/mapa/Modlitwy/noc/")
          (date (my--eu-date))
          (file (expand-file-name (concat date ".org") dir)))
     (unless (file-exists-p dir)
@@ -478,7 +588,7 @@
     (find-file file)))
 
 (defun my/create-skrotka-file ()
-  (let* ((dir "~/mapa/skrotka/")
+  (let* ((dir "~/mapa/Modlitwy/skrotacja/")
          (date (my--eu-date))
          (file (expand-file-name (concat date ".org") dir)))
     (unless (file-exists-p file)
@@ -490,7 +600,7 @@
 
 (defun my/create-sobota-file ()
   (let* ((m (my--choose-mystery))
-         (dir (expand-file-name m "~/mapa/sobota/"))
+         (dir (expand-file-name m "~/mapa/Modlitwy/sobota/"))
          (date (my--eu-date))
          (file (expand-file-name (concat date ".org") dir)))
     (unless (file-exists-p file)
@@ -502,15 +612,111 @@
 
 (defun my/create-rozaniec-file ()
   (let* ((m (my--choose-mystery))
-         (dir (expand-file-name m "~/różaniec/"))
+         (tajemnice (cdr (assoc m my/rozaniec-tajemnice)))
+         (dir (expand-file-name m "~/mapa/Modlitwy/różaniec/"))
          (date (my--eu-date))
          (file (expand-file-name (concat date ".org") dir)))
+
+    (unless (file-exists-p dir)
+      (make-directory dir t))
+
     (unless (file-exists-p file)
       (with-temp-buffer
         (insert "#+title: Różaniec – " m "\n")
         (insert "#+date: " date "\n\n")
+
+        (insert "* Intencja\n\n")
+
+        (dolist (myst tajemnice)
+          (insert "** " myst "\n")
+          (insert "Intencja:\n")
+          (insert "Owoc:\n\n"))
+
         (write-file file)))
-    (find-file file)))
+
+    (find-file file)
+
+    ;; automatyczne zwinięcie
+    (org-overview)))
+
+(defun my/dzien-modlitwy-jeden-plik ()
+  "Utwórz jeden plik z całym dniem modlitwy."
+  (interactive)
+
+  (let* ((dir "~/mapa/Modlitwy/dni/")
+         (date (my--eu-date))
+         (file (expand-file-name (concat date ".org") dir))
+         (m (my--choose-mystery))
+         (tajemnice (cdr (assoc m my/rozaniec-tajemnice))))
+
+    (unless (file-exists-p dir)
+      (make-directory dir t))
+
+    (unless (file-exists-p file)
+      (with-temp-buffer
+
+        (insert "#+title: Dzień modlitwy\n")
+        (insert "#+date: " date "\n\n")
+
+        ;; ======================
+        ;; MEDYTACJA
+        ;; ======================
+
+        (insert "* Medytacja\n\n")
+        (insert "Siglum:\n\n")
+
+        (insert "** SPOJRZENIE\n")
+        (insert "Scena Ewangelii:\n")
+        (insert "Osoby:\n")
+        (insert "Słowo które zatrzymuje:\n\n")
+
+        (insert "** JEZUS\n")
+        (insert "Jaki jest:\n")
+        (insert "Jego serce:\n\n")
+
+        (insert "** JA PRZY NIM\n")
+        (insert "Co się we mnie porusza:\n\n")
+
+        ;; ======================
+        ;; RÓŻANIEC
+        ;; ======================
+
+        (insert "* Różaniec – " m "\n\n")
+
+        (insert "** Intencja\n\n")
+
+        (dolist (myst tajemnice)
+          (insert "*** " myst "\n")
+          (insert "Intencja:\n")
+          (insert "Owoc:\n\n"))
+
+        ;; ======================
+        ;; DZIEŃ
+        ;; ======================
+
+        (insert "* Dzień\n\n")
+        (insert "Słowo które noszę przez dzień:\n\n")
+
+        ;; ======================
+        ;; RACHUNEK DNIA
+        ;; ======================
+
+        (insert "* Rachunek dnia\n\n")
+        (insert "** SPOJRZENIE\n")
+        (insert "Gdzie Bóg był dziś:\n")
+        (insert "Co było światłem:\n")
+        (insert "Co było trudne:\n\n")
+
+        ;; ======================
+        ;; NOC
+        ;; ======================
+
+        (insert "* Modlitwa nocna\n\n")
+        (insert "Oddanie dnia:\n")
+        (write-file file)))
+
+    (find-file file)
+    (org-overview)))
 
 (defun domowe-nowy-dzien ()
   "Utwórz nowy plik z zadaniami domowymi na dziś."
@@ -521,15 +727,19 @@
     (unless (file-exists-p dir) (make-directory dir t))
     (unless (file-exists-p file) (copy-file template file))
     (find-file file)))
-(global-set-key (kbd "C-c d") #'domowe-nowy-dzien)
+
 
 (defun my/rytm-dnia-dzis ()
   "Otwórz lub utwórz plik rytmu dnia na dziś."
   (interactive)
-  (let* ((dir "~/mapa/rytm-dnia/dni/")
+  (let* ((dir "~/mapa/Modlitwy/rytm-dnia/dni/")
+         (date (format-time-string "%d-%m-%Y %A"))
          (file (expand-file-name (format-time-string "%d-%m-%Y.org") dir))
-         (template "~/mapa/rytm-dnia/szablon-dnia.org"))
+         (template "~/mapa/Modlitwy/rytm-dnia/szablon-dnia.org"))
     (unless (file-exists-p dir) (make-directory dir t))
-    (unless (file-exists-p file) (copy-file template file))
+    (unless (file-exists-p file)
+      (copy-file template file)
+      (with-temp-buffer
+        (insert "* " date "\n\n")
+        (append-to-file (point-min) (point-max) file)))
     (find-file file)))
-(global-set-key (kbd "<f9>") #'my/rytm-dnia-dzis)
