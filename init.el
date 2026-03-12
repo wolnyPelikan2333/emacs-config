@@ -668,14 +668,27 @@
         (insert "** SPOJRZENIE\n")
         (insert "Scena Ewangelii:\n")
         (insert "Osoby:\n")
+	(insert "Słowo klucz:\n")
         (insert "Słowo które zatrzymuje:\n\n")
 
         (insert "** JEZUS\n")
         (insert "Jaki jest:\n")
-        (insert "Jego serce:\n\n")
+        (insert "Jego serce:\n")
+	(insert "Jego postawa:\n")
+        (insert "Jego obecność:\n\n")
 
         (insert "** JA PRZY NIM\n")
-        (insert "Co się we mnie porusza:\n\n")
+        (insert "Co się we mnie porusza:\n")
+	(insert "Co przyciąga?:\n")
+	(insert "Co się opiera?:\n")
+	(insert "Czego pragnę przy Nim?:\n\n")
+
+	(insert "** SŁOWO W SERCU\n")
+	(insert "Zdanie:\n")
+	(insert "Powolne powracanie:\n\n")
+
+	(insert "TRWANIE\n")
+	(insert "Cicha obecność razem:\n\n")
 
         ;; ======================
         ;; RÓŻANIEC
