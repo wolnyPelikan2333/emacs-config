@@ -1,0 +1,58 @@
+#+title: Git – checkpointy konfiguracji Emacsa
+#+date: 12-03-2026
+
+* Podstawowy workflow
+
+** Zapis zmian (checkpoint)
+
+git ck
+
+Robi:
+- git add -A
+- commit z datą
+- tag z datą i godziną
+- push repo
+- push tagów
+
+
+* Lista checkpointów
+
+git tag --sort=-creatordate
+
+Pokazuje tagi od najnowszego.
+
+
+* Co zmieniło się od checkpointa
+
+git diff TAG
+
+Przykład:
+
+git diff emacs-12-03-2026-2048
+
+
+* Zobacz stary init.el
+
+git show TAG:init.el
+
+Przykład:
+
+git show emacs-12-03-2026-2048:init.el
+
+
+* Historia repozytorium
+
+git lg
+
+Alias:
+
+git log --graph --decorate --oneline --all
+
+
+* Powrót do starego checkpointa
+
+git checkout TAG
+
+Przykład:
+
+git checkout emacs-12-03-2026-2048
