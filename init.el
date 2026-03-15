@@ -467,6 +467,7 @@
         (insert "#+date: " date "\n\n")
 
         (insert "*** SPOJRZENIE NA DZIEŃ\n")
+	(insert "Za co dziękuję:\n")
         (insert "Gdzie byłem:\n")
         (insert "Wydarzenia:\n")
         (insert "Spotkania:\n")
@@ -715,17 +716,119 @@
         ;; ======================
 
         (insert "* Rachunek dnia\n\n")
-        (insert "** SPOJRZENIE\n")
-        (insert "Gdzie Bóg był dziś:\n")
-        (insert "Co było światłem:\n")
-        (insert "Co było trudne:\n\n")
+        
+        (insert "** SPOJRZENIE NA DZIEŃ\n")
+	(insert "Za co dziękuję:\n")
+        (insert "Gdzie byłem:\n")
+        (insert "Wydarzenia:\n")
+        (insert "Spotkania:\n")
+        (insert "Słowo klucz dnia:\n")
+        (insert "Moment który zatrzymuje:\n\n")
 
+        (insert "*** JEZUS W MOIM DNIU\n")
+        (insert "Gdzie był blisko:\n")
+        (insert "Jego serce wobec mnie:\n")
+        (insert "Jego postawa:\n")
+        (insert "Jego obecność:\n\n")
+
+        (insert "*** JA PRZY NIM W TYM DNIU\n")
+        (insert "Jak byłem przy Nim:\n")
+        (insert "Co się we mnie poruszało:\n")
+        (insert "Co przyciągało:\n")
+        (insert "Co opierało się:\n")
+        (insert "Czego pragnę dalej:\n\n")
+
+        (insert "*** SŁOWO DNIA\n")
+        (insert "Zdanie:\n")
+        (insert "Powracanie:\n\n")
+
+        (insert "*** TRWANIE\n")
+        (insert "Oddanie dnia:\n")
+
+        
         ;; ======================
         ;; NOC
         ;; ======================
 
         (insert "* Modlitwa nocna\n\n")
-        (insert "Oddanie dnia:\n")
+       
+ 
+
+        (insert "*** WEJŚCIE\n")
+        (insert "Uciszenie:\n")
+        (insert "Obecność Boga:\n\n")
+
+        (insert "*** I. MEDYTACJA\n\n")
+        (insert "Siglum:\n\n")
+
+        (insert "**** SPOJRZENIE\n")
+        (insert "Scena Ewangelii:\n")
+        (insert "Osoby:\n")
+        (insert "Słowo klucz / oś fragmentu:\n")
+        (insert "Słowo które zatrzymuje:\n\n")
+
+        (insert "**** JEZUS\n")
+        (insert "Jaki jest:\n")
+        (insert "Jego serce:\n")
+        (insert "Jego postawa:\n")
+        (insert "Jego obecność:\n\n")
+
+        (insert "**** JA PRZY NIM\n")
+        (insert "Jak jestem przy Nim:\n")
+        (insert "Co się we mnie porusza:\n")
+        (insert "Co przyciąga:\n")
+        (insert "Co opiera się:\n")
+        (insert "Czego pragnę przy Nim:\n\n")
+
+        (insert "**** SŁOWO W SERCU\n")
+        (insert "Zdanie:\n")
+        (insert "Powolne powracanie:\n\n")
+
+        (insert "**** TRWANIE\n")
+        (insert "Cicha obecność razem:\n\n")
+
+        (insert "*** II. MODLITWA\n\n")
+
+        (insert "**** RÓŻANIEC\n\n")
+
+        (insert "***** CZĘŚĆ RADOSNA\n")
+        (insert "Temat:\n\n")
+        (dotimes (i 5)
+          (insert (format "****** TAJEMNICA %d\nNazwa:\nIntencja:\nOwoc:\n\n" (1+ i))))
+
+        (insert "***** CZĘŚĆ ŚWIATŁA\n")
+        (insert "Temat:\n\n")
+        (dotimes (i 5)
+          (insert (format "****** TAJEMNICA %d\nNazwa:\nIntencja:\nOwoc:\n\n" (1+ i))))
+
+        (insert "***** CZĘŚĆ BOLESNA\n")
+        (insert "Temat:\n\n")
+        (dotimes (i 5)
+          (insert (format "****** TAJEMNICA %d\nNazwa:\nIntencja:\nOwoc:\n\n" (1+ i))))
+
+        (insert "***** CZĘŚĆ CHWALEBNA\n")
+        (insert "Temat:\n\n")
+        (dotimes (i 5)
+          (insert (format "****** TAJEMNICA %d\nNazwa:\nIntencja:\nOwoc:\n\n" (1+ i))))
+
+        (insert "**** LITANIA\n")
+        (insert "Nazwa:\n")
+        (insert "Intencja:\n")
+        (insert "Owoc:\n\n")
+
+        (insert "**** INNA MODLITWA\n")
+        (insert "Nazwa:\n")
+        (insert "Intencja:\n")
+        (insert "Owoc:\n\n")
+
+        (insert "*** III. TRWANIE\n")
+        (insert "Cisza przy Bogu:\n\n")
+
+        (insert "*** ODDANIE NOCY\n")
+        (insert "Sen w Jego obecności:\n")
+
+       
+	
         (write-file file)))
 
     (find-file file)
