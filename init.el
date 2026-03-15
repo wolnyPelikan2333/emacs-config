@@ -4,17 +4,6 @@
 (desktop-save-mode 1)
 (setq desktop-load-locked-desktop t)
 
-
-
-(require 'package)
-(setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
-                         ("melpa" . "https://melpa.org/packages/")
-                         ("org" . "https://orgmode.org/elpa/")))
-(package-initialize)
-
-(require 'yasnippet)
-(yas-global-mode 1)
-
 ;; ============================
 ;; Version control
 ;; ============================
@@ -25,6 +14,7 @@
 
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 (require 'system)
+(require 'packages)
 (require 'buffer-macros)
 
 ;; ============================
@@ -34,20 +24,6 @@
 (setq history-length 1000)
 (recentf-mode 1)
 (setq recentf-max-saved-items 300)
-
-;; ============================
-;; Packages
-;; ============================
-
-(defvar my/packages
-  '(use-package which-key vterm nix-mode multiple-cursors js2-mode json-mode pdf-tools))
-
-(unless package-archive-contents
-  (package-refresh-contents))
-
-(dolist (pkg my/packages)
-  (unless (package-installed-p pkg)
-    (package-install pkg)))
 
 ;; ============================
 ;; Nix
